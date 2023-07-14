@@ -207,12 +207,27 @@ footer{
     }
 
     @media screen  and (max-width: 576px) {
-      .skills-con, .resume-container, .footer-con{
+      .header{
+       background-image: none;
+      }
+   
+      .banner{
+        flex-direction: column;
+      }
+      nav,
+      .skills-con, 
+      .resume-container,
+      .footer-con, 
+      .about{
         flex-direction: column;
         padding: 20px;
         text-align: center;
         justify-content: center;
         align-items: center;}
+        .banner .profile-pic{
+          width: 100%;
+
+        }
    
     #what-i-do-description{
       padding: 20px;
@@ -229,6 +244,9 @@ footer{
     }
     .contact{
       width: 80%;
+    }
+    .about-info-con{
+      flex-direction: column;
     }
 
   }
@@ -247,6 +265,10 @@ footer{
         }
         .contact{
           width: 90%;
+        }
+        .about-info-con{
+          flex-direction: column;
+                 
         }
 }
      
