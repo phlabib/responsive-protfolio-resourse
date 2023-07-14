@@ -4,6 +4,8 @@ body {
 .text-primary {
   color: #fd6e0a;
 }
+
+    /* header section */
 .btn-primary {
   border-radius: 5px;
   background: #fd6e0a;
@@ -76,6 +78,9 @@ height: 750px;
 .banner-con{
   max-width: 500px;
 }
+
+
+    /* about seciton */
 .about{
   padding: 130px ;
   border-radius: 10px;
@@ -111,6 +116,8 @@ main section{
   padding: 30px 150px;
 }
 
+
+        /* skills Section */
 .skills-con{
   display: flex;
   gap: 24px;
@@ -126,6 +133,7 @@ main section{
   color: #757575;
 }
 
+      /* resume section */
 .resume-columm-title {
   color:  #474747;
   font-size: 30px;
@@ -163,7 +171,7 @@ main section{
   text-align: center;
   margin-top: 50px;
 }
-
+/* footer section */
 /* foote style */
 footer{
   display: flex;
@@ -190,3 +198,57 @@ footer{
 .social-links a{
   margin-right: 25px;
 }
+
+    /* responsive style */
+
+    /* mobile deveces */
+    .hide{
+      display: none;
+    }
+
+    @media screen  and (max-width: 576px) {
+      .skills-con, .resume-container, .footer-con{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;}
+   
+    #what-i-do-description{
+      padding: 20px;
+
+    }
+    .resume-container{
+      padding: 20px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-column{
+      width: 100%;
+    }
+    .contact{
+      width: 80%;
+    }
+
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 960px) {
+    .skills-con, .resume-container, .footer-con {
+      flex-direction: wrap;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;}
+        .footer-column{
+          width: 100%;
+        }
+        .contact{
+          width: 90%;
+        }
+}
+     
+
+  
